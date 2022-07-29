@@ -8,4 +8,13 @@ class Student < Person
   def play_hookey
     "¯\(ツ)/¯"
   end
+
+  def add_classroom(classroom)
+    @classroom = classroom
+    classroom.add_student(self) unless @students.include?(self)
+  end
 end
+
+student = Student.new 1, 34
+student.play_hookey
+student.age
