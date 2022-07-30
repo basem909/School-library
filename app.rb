@@ -23,18 +23,18 @@ class App
   # rubocop:disable Metrics/MethodLength
   def add_person
     puts 'Do you want to add a student (1) or a teacher (2) '
-    person = gets.chomb.to_i
+    person = gets.chomp.to_i
     puts 'Enter name'
-    name = gets.chomb
+    name = gets.chomp
     puts 'Enter age'
-    age = gets.chomb.to_i
+    age = gets.chomp.to_i
 
     case person
     when 1
       puts 'Enter classroom'
-      classroom = gets.chomb
+      classroom = gets.chomp
       puts 'Has parent permission [Y/N]'
-      permission = gets.chomb
+      permission = gets.chomp
       @people << if permission == 'Y'
                    Student.new(classroom, age, name, parent_permission: true)
                  else
