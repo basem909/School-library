@@ -9,3 +9,7 @@ class Teacher < Person
     true
   end
 end
+person = Person.new(34, 'John')
+p person.name
+teacher = Teacher.new(45, 'eng')
+p(teacher)
