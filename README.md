@@ -1,51 +1,19 @@
+# Ruby on Replit
 
-# School library
+This is a template to get you started with Ruby on Replit. It's ready to go so you can just hit run and start coding!
 
-Imagine that you are the librarian of OOP University, and you need a tool to record what books are in the library and who borrows them. This app will allow you to:
+## Running the repl
 
-* Add new students or teachers.
-* Add new books.
-* Save records of who borrowed a given book and when.
-* And all of this will be built in a beautiful and well-organized way!
+Simply hit run! You can edit the run command from the `.replit` file.
 
+## Installing packages
 
-## Built With
+To add packages to your repl, we recommend using the Replit packager interface in the left sidebar or using `bundle install` in the shell. Check out the [Bundle docs here](https://bundler.io/v2.3/#getting-started).
 
-- Ruby
+**Warning: Avoid using `gem install` to add packages.**
 
+Beacuse Ruby repls use [Bundle](https://bundler.io/) under the hood to provide a consistent environment that tracks and installs the exact gems and versions needed, we recommend using `bundle install` instead of `gem install`, which may not work as expected.
 
+## Help
 
-
-## Getting Started
-
-This repository includes files with Ruby that can be used to recreate the functions
-clone this link into your local device.
-https://github.com/basem909/School-library.git
-
-
-## Authors
-
-👤 **Bassem**
-
-- GitHub: [@basem909](https://github.com/basem909)
-- Twitter: [@ShamsBassem](https://twitter.com/ShamsBassem)
-- LinkedIn: [Bassem Abdelrahman](https://www.linkedin.com/in/bassem-shams-126a29134/) 
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-
-
-## Show your support
-
-Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
-
-## 📝 License
-
-This project is [MIT](./MIT.md) licensed.
+If you need help you might be able to find an answer on our [docs](https://docs.replit.com) page. Feel free to report bugs and give us feedback [here](https://replit.com/support).
