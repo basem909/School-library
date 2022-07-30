@@ -43,8 +43,8 @@ class App
 
     when 2
       puts 'Enter specialization:'
-      specialization = gets.capitalize.chomp
-      @people << Teacher.new(specialization: specialization, age: age, name: name)
+      specialization = gets.chomp
+      @people << Teacher.new(specialization, age, name)
     else
       puts 'Invalid choice, please try again'
     end
@@ -72,7 +72,7 @@ class App
     person_index = gets.chomp.to_i
     puts 'Date YYYY/MM/DD:'
     rent_date = gets.chomp
-    register_rent = Rental.new(rent_date, people[person_index], books[book_index])
+    register_rent = Rentals.new(rent_date, people[person_index], books[book_index])
     rentals.push(register_rent)
     puts 'Rental created successfully'
   end
