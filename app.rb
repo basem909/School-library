@@ -6,18 +6,18 @@ require_relative('./rentals')
 class App
   attr_reader :books, :people, :rentals
 
-  def intialize
+  def initialize
     @books = []
     @people = []
     @rentals = []
   end
 
   def books_list
-    books.each { |book| puts `Title: #{book.title}, Author: #{book.author}` }
+    books.each { |book| puts "Title: #{book.title}, Author: #{book.author}" }
   end
 
   def people_list
-    people.each { |person| puts `Name: #{person.name} ID: #{person.id} Age: #{person.age}` }
+    people.each { |person| puts "Name: #{person.name} ID: #{person.id} Age: #{person.age}" }
   end
 
   # rubocop:disable Metrics/MethodLength
@@ -63,7 +63,7 @@ class App
 
   def rent_book
     puts 'Select a book from the following list by number'
-    books.each_with_index { |book, index| puts `No.#{index}) Title: #{book.title}, Author: #{book.author}` }
+    books.each_with_index { |book, index| puts "No.#{index}) Title: #{book.title}, Author: #{book.author}" }
     book_index = gets.chomp.to_i
     puts 'Select a person from the following list by number'
     people.each_with_index do |person, index|
